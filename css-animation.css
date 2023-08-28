@@ -1,0 +1,498 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Source+Sans+3&display=swap');
+
+body{
+   font-family: 'Roboto';
+   text-align: center;
+   background-image: url(gif.mp4);
+   color: aliceblue;
+}
+/* translateX*/
+.translateX{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 1s;
+}
+.translateX:active{
+     transform: translateX(200px);
+}
+.translateX-{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 1s;
+}
+.translateX-:active{
+     transform: translateX(-200px);
+}
+.translateY{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 1s;
+}
+.translateY:active{
+     transform: translateY(200px);
+}
+/* scales */
+/* scaleX*/
+.scaleX{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 1s;
+}
+.gif{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    z-index: -100;
+    max-width: 100%;
+}
+.scaleX:active{
+    transform: scaleX(2);/* twise of element in X-line(with)*/
+}
+/* scaleY */
+.scaleY{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 1s;
+}
+.scaleY:active{
+    transform: scaleY(2);/* twise of element in Y-line(height)*/
+}
+/* scale */
+.scale{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 3s;
+}
+.scale:active{
+    transform: scale(3 , 2);/* twise of element in X-line(both) */
+}
+.scale-{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 3s;
+}
+.scale-:active{
+    transform: scalex(-3);/* twise of element in X-line(both) */
+}
+/* rotate */
+.rotate{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 3s;
+}
+.rotate:active{
+    transform: rotate(45deg);
+}
+
+.rotate-{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 3s;
+}
+.rotate-:active{
+    transform: rotate(-45deg);
+}
+
+/* skrew */
+
+.skewX{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all in;
+}
+.skewX:active{
+    transform: skew(30deg);
+}
+.skewY{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition: all 2s;
+}
+.skewY:active{
+    transform: skewY(30deg);
+}
+
+.property-durition{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: 'width' ;
+    transition-duration: 5s;
+}
+.property-durition:active{
+    width: 500px;
+}
+/* transition-delay*/
+.transition-delay{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: width  , background-color;
+    transition-duration: 3s , 4s;
+    transition-delay: 0s , 4s ;
+}
+.transition-delay:active{
+    width: 500px;
+    background-color: blue;
+}
+/* transition-timing-function*/
+.transition-timing-function{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: ease;
+}
+.transition-timing-function:active{
+    
+    transform: translateX(200px);
+
+}
+
+.transition-timing-function{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: ease;
+}
+.transition-timing-function:active{
+    
+    transform: translateX(200px);
+
+}
+
+.transition-timing-function-linear{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: linear;
+}
+.transition-timing-function-linear:active{
+    transform: translateX(400px);
+
+}
+
+
+.transition-timing-function-ease-in{
+      width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: ease-in;
+}
+
+.transition-timing-function-ease-in:active{
+    transform: translateX(400px);
+
+}
+
+.transition-timing-function-ease-out{
+      width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: ease-out;
+}
+
+.transition-timing-function-ease-out:active{
+    transform: translateX(400px);
+
+}
+
+.transition-timing-function-ease-in-out{
+      width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    transition-property: transform ;
+    transition-duration: 3s , 4s;
+    transition-timing-function: ease-in-out;
+}
+
+.transition-timing-function-ease-in-out:active{
+    transform: translateX(400px);
+
+}
+.keyframe{
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: changecolor; /* name of animation */
+    animation-duration: 6s; /* time of playing and ending animation */
+}
+
+@keyframes changecolor {
+    
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+.animation-iteration-count{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: repeating; /* name of animation */
+    animation-duration: 6s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+   
+
+}
+
+@keyframes repeating {
+    
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+.animation-direction{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: direction; /* name of animation */
+    animation-duration: 6s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+   
+
+}
+
+@keyframes  direction {
+    
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+.animation-direction-2{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: direction-2; /* name of animation */
+    animation-duration: 3s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+
+}
+
+@keyframes  direction-2 {
+    
+    0%{
+        transform: translateX(100px);
+    }
+    
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+
+.animation-direction-3{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: direction-3; /* name of animation */
+    animation-duration: 3s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+   
+
+}
+
+@keyframes  direction-3 {
+    
+    0%{
+        transform: translateX(100px);
+    }
+    
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+.animation-play-state{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: play-state; /* name of animation */
+    animation-duration: 3s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.animation-play-state:hover{
+      animation-play-state: paused;
+}
+
+@keyframes  play-state {
+    
+    0%{
+        transform: translateX(100px);
+    }
+    
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+.animation-fill-mode{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: fill-mode; /* name of animation */
+    animation-duration: 6s; /* time of playing and ending animation */
+    animation-iteration-count: 3s;
+    animation-fill-mode: forwards; /* element will stay in its last position and frame in this value*/
+   
+
+}
+
+@keyframes  fill-mode {
+    
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+.animation-fill-mode-backwards{
+
+    width: 300px;
+    height: 300px;
+    border: solid red 3px;
+    background-color: rgb(14, 255, 255);
+    margin: auto;
+    animation-name: -backwards; /* name of animation */
+    animation-duration: 6s; /* time of playing and ending animation */
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-fill-mode: backwards; /* element will start with everything we took to @keyframe*/
+   
+
+}
+
+@keyframes -backwards{
+    
+    0%{
+        background-color: rgb(0, 197, 52);
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
+
+
+
